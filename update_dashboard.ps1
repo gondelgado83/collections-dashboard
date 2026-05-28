@@ -16,6 +16,6 @@ if ($LASTEXITCODE -eq 0) {
         Write-Host "$(Get-Date -Format 'HH:mm') Sin cambios"
     }
 } else {
-    Write-Host "ERROR en Python — revisar NLS connection"
+    Write-Host "ERROR en Python - revisar NLS connection"
     exit 1
 }
