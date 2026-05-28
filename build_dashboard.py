@@ -14,7 +14,7 @@ NLS_CONN = (
     "SERVER=rs3.nortridgehosting.com;"
     "DATABASE=Brio_Management;"
     "UID=Bmrs8800;"
-    f"PWD={os.environ.get('NLS_PWD', '')};"
+    f"PWD={os.environ.get('NLS_PWD', '!04#c@d629')};"
     "TrustServerCertificate=yes;"
 )
 
