@@ -529,11 +529,11 @@ def main():
     print("Generando HTML...")
     html = generate_html(data)
 
-    os.makedirs('dist', exist_ok=True)
-    with open('dist/index.html', 'w', encoding='utf-8') as f:
+    os.makedirs('docs', exist_ok=True)
+    with open('docs/index.html', 'w', encoding='utf-8') as f:
         f.write(html)
 
-    print(f"dist/index.html generado — {len(html):,} bytes")
+    print(f"docs/index.html generado — {len(html):,} bytes")
 
 
 if __name__ == '__main__':

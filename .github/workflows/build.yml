@@ -1,10 +1,7 @@
 name: Collections Dashboard
 
 on:
-  schedule:
-    # Cada hora en dias habiles (lunes-viernes), 8 AM - 8 PM ET (12:00 - 00:00 UTC)
-    - cron: '0 12-23 * * 1-5'
-  workflow_dispatch:   # permite correrlo manualmente desde GitHub
+  workflow_dispatch:   # solo manual — el build automatico corre desde la PC local
 
 permissions:
   contents: read
