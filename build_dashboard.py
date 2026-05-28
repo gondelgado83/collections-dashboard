@@ -10,7 +10,7 @@ import pyodbc
 
 # ── Conexion NLS ──────────────────────────────────────────────────────────────
 NLS_CONN = (
-    "DRIVER={ODBC Driver 18 for SQL Server};"
+    "DRIVER={ODBC Driver 17 for SQL Server};"
     "SERVER=rs3.nortridgehosting.com;"
     "DATABASE=Brio_Management;"
     "UID=Bmrs8800;"
