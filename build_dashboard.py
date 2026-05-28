@@ -127,10 +127,9 @@ def q_payments(cur):
           CASE WHEN h.transaction_code IN (201,203,205,207,209,211,221,223,251,509,513,525,535,545)
                THEN 1 ELSE 0 END,
           {NET_CASE},
-          ISNULL(u.firstname+' '+u.lastname,'')
+          ISNULL(h.user_reference,'')
         FROM loanacct_trans_history h
         JOIN loanacct l ON l.acctrefno = h.acctrefno
-        LEFT JOIN nlsusers u ON u.userno = h.userno
         WHERE h.transaction_code IN ({CODES_STR})
           AND DATEPART(mm,h.transaction_date)=DATEPART(mm,GETDATE())
           AND DATEPART(yy,h.transaction_date)=DATEPART(yy,GETDATE())
