@@ -33,7 +33,7 @@
 <div class="topbar d-flex justify-content-between align-items-center">
   <div>
     <h1>Brio Management &mdash; Collections Dashboard</h1>
-    <small>Actualizado: 03/06/2026 13:33 ET &nbsp;&bull;&nbsp; Se refresca automaticamente cada hora</small>
+    <small>Actualizado: 03/06/2026 14:00 ET &nbsp;&bull;&nbsp; Se refresca automaticamente cada hora</small>
   </div>
   <span class="badge bg-secondary fs-6 px-3 py-2">N/A &mdash; Jun 2026</span>
 </div>
@@ -45,28 +45,28 @@
     <div class="col-6 col-md-3">
       <div class="card p-3 h-100">
         <div class="kpi-label">Objetivo Hoy</div>
-        <div class="kpi-val text-primary">$6,431</div>
+        <div class="kpi-val text-primary">$6,524</div>
         <small class="text-muted">Interest + CPI + Lenderin</small>
       </div>
     </div>
     <div class="col-6 col-md-3">
       <div class="card p-3 h-100">
         <div class="kpi-label">Objetivo MTD</div>
-        <div class="kpi-val text-success">$21,153</div>
+        <div class="kpi-val text-success">$21,245</div>
         <small class="text-muted">Interest + CPI + Lenderin</small>
       </div>
     </div>
     <div class="col-6 col-md-3">
       <div class="card p-3 h-100">
         <div class="kpi-label">Total Colectado Hoy</div>
-        <div class="kpi-val">$11,079</div>
+        <div class="kpi-val">$11,171</div>
         <small class="text-muted">Todos los conceptos</small>
       </div>
     </div>
     <div class="col-6 col-md-3">
       <div class="card p-3 h-100">
         <div class="kpi-label">Total Colectado MTD</div>
-        <div class="kpi-val">$39,946</div>
+        <div class="kpi-val">$40,039</div>
         <small class="text-muted">Todos los conceptos</small>
       </div>
     </div>
@@ -88,7 +88,7 @@
             <span class="fw-bold">0%</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-danger" style="width:0%">$21,153</div>
+            <div class="progress-bar bg-danger" style="width:0%">$21,245</div>
           </div>
         </div>
         <div class="mb-3">
@@ -97,7 +97,7 @@
             <span class="fw-bold">0%</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-danger" style="width:0%">$21,153</div>
+            <div class="progress-bar bg-danger" style="width:0%">$21,245</div>
           </div>
         </div>
         
@@ -150,8 +150,8 @@
         <tbody>
         <tr>
           <td><b>06/2026</b></td>
-          <td class="text-end">$21,153</td>
-          <td class="text-end text-muted">$39,946</td>
+          <td class="text-end">$21,245</td>
+          <td class="text-end text-muted">$40,039</td>
           <td class="text-end">—</td>
           <td class="text-end">—</td>
           <td class="text-end">—</td>
@@ -288,6 +288,34 @@
           </tr>
         </thead>
         <tbody id="pay-body">
+        <tr data-search="06/03/2026 0037807 izquierdo yoel alvarez lenderin ">
+          <td>06/03/2026</td><td>0037807</td>
+          <td>IZQUIERDO YOEL ALVAREZ</td>
+          <td>Lenderin</td>
+          <td class="text-end fw-bold">$23.10</td>
+          <td></td>
+        </tr>
+        <tr data-search="06/03/2026 0037807 izquierdo yoel alvarez lenderin ">
+          <td>06/03/2026</td><td>0037807</td>
+          <td>IZQUIERDO YOEL ALVAREZ</td>
+          <td>Lenderin</td>
+          <td class="text-end fw-bold">$23.10</td>
+          <td></td>
+        </tr>
+        <tr data-search="06/03/2026 0037673 jackson niah patrice lenderin ">
+          <td>06/03/2026</td><td>0037673</td>
+          <td>JACKSON NIAH PATRICE</td>
+          <td>Lenderin</td>
+          <td class="text-end fw-bold">$23.10</td>
+          <td></td>
+        </tr>
+        <tr data-search="06/03/2026 0037673 jackson niah patrice lenderin ">
+          <td>06/03/2026</td><td>0037673</td>
+          <td>JACKSON NIAH PATRICE</td>
+          <td>Lenderin</td>
+          <td class="text-end fw-bold">$23.10</td>
+          <td></td>
+        </tr>
         <tr class="table-danger" data-search="06/03/2026 0037536 de hoyos jorge luis romero principal ">
           <td>06/03/2026</td><td>0037536</td>
           <td>DE HOYOS JORGE LUIS ROMERO</td>
@@ -5138,9 +5166,9 @@
         new Chart(document.getElementById('chartHoy'), {
           type: 'bar',
           data: {
-            labels: ["Interest", "Principal", "CPI", "Repo", "Late Fees", "CPI Berkshire", "Misc Fees", "Lenderin"],
+            labels: ["Interest", "Principal", "CPI", "Repo", "Late Fees", "CPI Berkshire", "Lenderin", "Misc Fees"],
             datasets: [{
-              data: [4886.53, 4241.68, 1478.76, 300.0, 105.89, 89.0, 0.0, -23.1],
+              data: [4886.53, 4241.68, 1478.76, 300.0, 105.89, 89.0, 69.3, 0.0],
               backgroundColor: ["#1F4E79", "#2E75B6", "#70AD47", "#C55A11", "#7F7F7F", "#ED7D31", "#4472C4", "#A9D18E"],
               borderRadius: 4,
               borderSkipped: false
@@ -5158,9 +5186,9 @@
         new Chart(document.getElementById('chartMtd'), {
           type: 'bar',
           data: {
-            labels: ["Principal", "Interest", "CPI", "Late Fees", "Repo", "Lenderin", "CPI Berkshire", "Misc Fees"],
+            labels: ["Principal", "Interest", "CPI", "Late Fees", "Lenderin", "Repo", "CPI Berkshire", "Misc Fees"],
             datasets: [{
-              data: [17637.52, 14599.5, 6052.01, 855.98, 300.0, 254.1, 247.0, 0.0],
+              data: [17637.52, 14599.5, 6052.01, 855.98, 346.5, 300.0, 247.0, 0.0],
               backgroundColor: ["#1F4E79", "#2E75B6", "#70AD47", "#C55A11", "#7F7F7F", "#ED7D31", "#4472C4", "#A9D18E"],
               borderRadius: 4,
               borderSkipped: false
@@ -5180,7 +5208,7 @@
           data: {
             labels: ["Objetivo MTD"],
             datasets: [{
-              data: [21152.61],
+              data: [21245.01],
               backgroundColor: ["#2E75B6"],
               borderRadius: 4,
               borderSkipped: false
@@ -5202,7 +5230,7 @@ new Chart(document.getElementById('chartHist'), {
       {
         type: 'bar',
         label: 'Objetivo Colectado',
-        data: [295860.59, 288904.25, 301649.03, 335057.67, 295097.74, 322486.4, 323558.4, 299396.35, 271479.4, 285852.64, 301491.97, 21152.61],
+        data: [295860.59, 288904.25, 301649.03, 335057.67, 295097.74, 322486.4, 323558.4, 299396.35, 271479.4, 285852.64, 301491.97, 21245.01],
         backgroundColor: '#2E75B6',
         borderRadius: 4,
         order: 2
