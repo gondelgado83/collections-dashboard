@@ -33,7 +33,7 @@
 <div class="topbar d-flex justify-content-between align-items-center">
   <div>
     <h1>Brio Management &mdash; Collections Dashboard</h1>
-    <small>Actualizado: 03/06/2026 14:33 ET &nbsp;&bull;&nbsp; Se refresca automaticamente cada hora</small>
+    <small>Actualizado: 03/06/2026 15:00 ET &nbsp;&bull;&nbsp; Se refresca automaticamente cada hora</small>
   </div>
   <span class="badge bg-secondary fs-6 px-3 py-2">N/A &mdash; Jun 2026</span>
 </div>
@@ -45,28 +45,28 @@
     <div class="col-6 col-md-3">
       <div class="card p-3 h-100">
         <div class="kpi-label">Objetivo Hoy</div>
-        <div class="kpi-val text-primary">$7,522</div>
+        <div class="kpi-val text-primary">$7,586</div>
         <small class="text-muted">Interest + CPI + Lenderin</small>
       </div>
     </div>
     <div class="col-6 col-md-3">
       <div class="card p-3 h-100">
         <div class="kpi-label">Objetivo MTD</div>
-        <div class="kpi-val text-success">$22,244</div>
+        <div class="kpi-val text-success">$22,307</div>
         <small class="text-muted">Interest + CPI + Lenderin</small>
       </div>
     </div>
     <div class="col-6 col-md-3">
       <div class="card p-3 h-100">
         <div class="kpi-label">Total Colectado Hoy</div>
-        <div class="kpi-val">$12,850</div>
+        <div class="kpi-val">$12,938</div>
         <small class="text-muted">Todos los conceptos</small>
       </div>
     </div>
     <div class="col-6 col-md-3">
       <div class="card p-3 h-100">
         <div class="kpi-label">Total Colectado MTD</div>
-        <div class="kpi-val">$41,717</div>
+        <div class="kpi-val">$41,805</div>
         <small class="text-muted">Todos los conceptos</small>
       </div>
     </div>
@@ -88,7 +88,7 @@
             <span class="fw-bold">0%</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-danger" style="width:0%">$22,244</div>
+            <div class="progress-bar bg-danger" style="width:0%">$22,307</div>
           </div>
         </div>
         <div class="mb-3">
@@ -97,7 +97,7 @@
             <span class="fw-bold">0%</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-danger" style="width:0%">$22,244</div>
+            <div class="progress-bar bg-danger" style="width:0%">$22,307</div>
           </div>
         </div>
         
@@ -150,8 +150,8 @@
         <tbody>
         <tr>
           <td><b>06/2026</b></td>
-          <td class="text-end">$22,244</td>
-          <td class="text-end text-muted">$41,717</td>
+          <td class="text-end">$22,307</td>
+          <td class="text-end text-muted">$41,805</td>
           <td class="text-end">—</td>
           <td class="text-end">—</td>
           <td class="text-end">—</td>
@@ -288,6 +288,20 @@
           </tr>
         </thead>
         <tbody id="pay-body">
+        <tr data-search="06/03/2026 92171 lopez joshua  interest 29475006989">
+          <td>06/03/2026</td><td>92171</td>
+          <td>LOPEZ JOSHUA </td>
+          <td>Interest</td>
+          <td class="text-end fw-bold">$63.14</td>
+          <td>29475006989</td>
+        </tr>
+        <tr data-search="06/03/2026 92171 lopez joshua  principal 29475006989">
+          <td>06/03/2026</td><td>92171</td>
+          <td>LOPEZ JOSHUA </td>
+          <td>Principal</td>
+          <td class="text-end fw-bold">$24.86</td>
+          <td>29475006989</td>
+        </tr>
         <tr data-search="06/03/2026 8697 king dwayne  late fees 108324">
           <td>06/03/2026</td><td>8697</td>
           <td>KING DWAYNE </td>
@@ -5420,7 +5434,7 @@
           data: {
             labels: ["Interest", "Principal", "CPI", "Repo", "CPI Berkshire", "Late Fees", "Lenderin", "Misc Fees"],
             datasets: [{
-              data: [5246.79, 4872.4, 2038.37, 300.0, 168.0, 155.03, 69.3, 0.0],
+              data: [5309.93, 4897.26, 2038.37, 300.0, 168.0, 155.03, 69.3, 0.0],
               backgroundColor: ["#1F4E79", "#2E75B6", "#70AD47", "#C55A11", "#7F7F7F", "#ED7D31", "#4472C4", "#A9D18E"],
               borderRadius: 4,
               borderSkipped: false
@@ -5440,7 +5454,7 @@
           data: {
             labels: ["Principal", "Interest", "CPI", "Late Fees", "Lenderin", "CPI Berkshire", "Repo", "Misc Fees"],
             datasets: [{
-              data: [18268.24, 14959.76, 6611.62, 905.12, 346.5, 326.0, 300.0, 0.0],
+              data: [18293.1, 15022.9, 6611.62, 905.12, 346.5, 326.0, 300.0, 0.0],
               backgroundColor: ["#1F4E79", "#2E75B6", "#70AD47", "#C55A11", "#7F7F7F", "#ED7D31", "#4472C4", "#A9D18E"],
               borderRadius: 4,
               borderSkipped: false
@@ -5460,7 +5474,7 @@
           data: {
             labels: ["Objetivo MTD"],
             datasets: [{
-              data: [22243.88],
+              data: [22307.02],
               backgroundColor: ["#2E75B6"],
               borderRadius: 4,
               borderSkipped: false
@@ -5482,7 +5496,7 @@ new Chart(document.getElementById('chartHist'), {
       {
         type: 'bar',
         label: 'Objetivo Colectado',
-        data: [295860.59, 288904.25, 301649.03, 335057.67, 295097.74, 322486.4, 323558.4, 299396.35, 271479.4, 285852.64, 301491.97, 22243.88],
+        data: [295860.59, 288904.25, 301649.03, 335057.67, 295097.74, 322486.4, 323558.4, 299396.35, 271479.4, 285852.64, 301491.97, 22307.02],
         backgroundColor: '#2E75B6',
         borderRadius: 4,
         order: 2
